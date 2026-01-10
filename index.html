@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<>
 
     <!-- Background Video & Header -->
 
@@ -44,7 +44,6 @@
                         <a href="./contact.html">Contact Us</a>
                     </li>
                 </ul>
-                </form>
             </nav>
               
 
@@ -697,20 +696,44 @@
             <p>Copyright © 2023 Adventour All Rights Reserved.<br>Website developed by: Amit Kumar Singh</p>
         </div>
     </section>
- <SCRIPT type="text/javascript">
-        function JavaBlink() {
-           var blinks = document.getElementsByTagName('JavaBlink');
-           for (var i = blinks.length - 1; i >= 0; i--) {
-              var s = blinks[i];
-              s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
-           }
-           window.setTimeout(JavaBlink, 500);
+    <SCRIPT type="text/javascript">
+            function JavaBlink() {
+            var blinks = document.getElementsByTagName('JavaBlink');
+            for (var i = blinks.length - 1; i >= 0; i--) {
+                var s = blinks[i];
+                s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
+            }
+            window.setTimeout(JavaBlink, 500);
+            }
+            if (document.addEventListener) document.addEventListener("DOMContentLoaded", JavaBlink, false);
+            else if (window.addEventListener) window.addEventListener("load", JavaBlink, false);
+            else if (window.attachEvent) window.attachEvent("onload", JavaBlink);
+            else window.onload = JavaBlink;
+    </SCRIPT>
+
+    <script>
+        let mybutton = document.getElementById("scrollTopBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
         }
-        if (document.addEventListener) document.addEventListener("DOMContentLoaded", JavaBlink, false);
-        else if (window.addEventListener) window.addEventListener("load", JavaBlink, false);
-        else if (window.attachEvent) window.attachEvent("onload", JavaBlink);
-        else window.onload = JavaBlink;
-      </SCRIPT>
+        }
+
+        function topFunction() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
+
+    <!-- Scroll of top Button -->
+    <button onclick="topFunction()" id="scrollTopbtn" title="Go to up">
+        <i class="bx bx-up-arrow-alt"></i>
+    </button>
+    
 </body>
 
 </html>
