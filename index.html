@@ -226,8 +226,17 @@
                     </div>
                 </div>
             </a>
-
         </div>
+
+        <!-- Contribution -->
+         <div class="box">
+            <span class="offer-badge" style="position: absolute; background: #f32f2f; color: white; padding: 5px 10px; border-radius: 5px; font-size: 10px; z-index: 2;">LIMITED OFFER</span>
+            <div class="image">
+                <img src="./assets/files/p1.jpg" alt="">
+                <h3>Starting at Rs.2,700 </h3>
+            </div>
+        </div>
+
     </section>
 
     <section>
@@ -419,6 +428,11 @@
                     padding: 48px;
                     font-size: 12px;
                     gap: 10px;
+                    /* Contribution */
+                    margin: 20ps auto;
+                    max-width: 1100px;
+                    width: 90%;
+
                     margin-top: 5px;
                     margin-left: 100px;
                     margin-right: 100px;
@@ -697,7 +711,7 @@
             <p>Copyright © 2023 Adventour All Rights Reserved.<br>Website developed by: Amit Kumar Singh</p>
         </div>
     </section>
- <SCRIPT type="text/javascript">
+    <SCRIPT type="text/javascript">
         function JavaBlink() {
            var blinks = document.getElementsByTagName('JavaBlink');
            for (var i = blinks.length - 1; i >= 0; i--) {
@@ -710,7 +724,18 @@
         else if (window.addEventListener) window.addEventListener("load", JavaBlink, false);
         else if (window.attachEvent) window.attachEvent("onload", JavaBlink);
         else window.onload = JavaBlink;
-      </SCRIPT>
+    </SCRIPT>
+
+    <!-- Contribution -->
+     <script>
+        window.onscroll = function() {
+        let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrolled = (winScroll / height) * 100;
+        // You can use this 'scrolled' value to update a progress bar width
+        };
+    </script>
+
 </body>
 
 </html>
